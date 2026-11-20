@@ -22,6 +22,11 @@ Every charge a bot paid, by story, with a running total. These are test charges.
 
 ![Payments log](payments-log.png)
 
+### Cloudflare record of a successful payment
+The edge Worker's log for a ClaudeBot test fetch: the bot presented a license token, was charged 0.01 USD for the story, and got the page (status 200).
+
+![Cloudflare log of a paid fetch](cloudflare-paid-fetch.png)
+
 ### Cloudflare Worker log
 Requests handled by the edge Worker during a paid-fetch test.
 

@@ -18,6 +18,8 @@ It is being built by Bay City News Labs, the experimental division of Bay City N
 
 ![The payments log: test charges from a training crawler, with a running total per story](screenshots/payments-log.png)
 
+![Cloudflare's record of a paid fetch: ClaudeBot charged 0.01 USD and served the story](screenshots/cloudflare-paid-fetch.png)
+
 ## The problem
 
 AI systems fetch local news stories to answer users' questions and send back almost no readers. At Local News Matters, ChatGPT fetched stories about 2,600 times a day and sent about 28 clicks a day from all AI engines combined, and it kept fetching after we asked it to stop in robots.txt. Blocking bots at the network level stopped the fetching without hurting search or referral clicks. But blocking alone earns nothing, and it does nothing about the same story sitting on partner sites.
