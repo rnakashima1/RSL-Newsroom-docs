@@ -16,7 +16,9 @@ It is being built by Bay City News Labs, the experimental division of Bay City N
 
 ![The story editor: one License dropdown, with each bot group's terms and the story ID](screenshots/story-sidebar.png)
 
-![The payments log: test charges from a training crawler, with a running total per story](screenshots/payments-log.png)
+![The payments log: test charges from a training crawler (test account; no payment from Anthropic), with a running total per story](screenshots/payments-log.png)
+
+*Test charges from a test account labeled "Anthropic (test)"; no payment came from Anthropic.*
 
 ![Cloudflare's record of a paid fetch: ClaudeBot charged 0.01 USD and served the story](screenshots/cloudflare-paid-fetch.png)
 

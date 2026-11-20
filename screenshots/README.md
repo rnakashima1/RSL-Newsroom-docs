@@ -18,7 +18,7 @@ Newsrooms can edit the bots in each group or add groups.
 ![Bot groups](bot-groups.png)
 
 ### Payments log
-Every charge a bot paid, by story, with a running total. These are test charges.
+Every charge a bot paid, by story, with a running total. These are test charges from a test account labeled "Anthropic (test)"; no payment came from Anthropic.
 
 ![Payments log](payments-log.png)
 
