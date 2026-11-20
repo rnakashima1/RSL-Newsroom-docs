@@ -12,7 +12,11 @@ It is being built by Bay City News Labs, the experimental division of Bay City N
 
 - **A licensed story on staging:** <https://localnewsmatters-access-control.newspackstaging.com/2026/11/16/test-of-bcn-article-post/>
 - **Two-minute video demo:** [Licensing Bots with RSL for Publishers](https://www.loom.com/share/7f95dc3dcf1d4433883ca33df31e5d0e)
-- **Screenshots:** [screenshots/](screenshots/)
+- **More screenshots:** [screenshots/](screenshots/)
+
+![The story editor: one License dropdown, with each bot group's terms and the story ID](screenshots/story-sidebar.png)
+
+![The payments log: test charges from a training crawler, with a running total per story](screenshots/payments-log.png)
 
 ## The problem
 

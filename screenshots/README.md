@@ -1,10 +1,28 @@
 # Screenshots
 
-Add PNGs here before publishing. Suggested shots (crop out any secrets, emails or account IDs):
+All taken on the Local News Matters staging site on Nov. 20, 2026.
 
-1. `story-sidebar.png`: the License dropdown and per-group summary in the block editor
-2. `story-licenses.png`: RSL Newsroom → Story licenses, one license open
-3. `bot-groups.png`: RSL Newsroom → Bot groups
-4. `payments-log.png`: RSL Newsroom → Payments log with a few test charges
-5. `402-response.png`: a terminal showing a bot getting 402, then 200 with a token
-6. `cloudflare-log.png`: the Cloudflare log of a successful paid fetch
+### The reporter's view: one License dropdown per story
+The sidebar shows what each bot group gets, the rights holder and the story ID.
+
+![Story editor sidebar](story-sidebar.png)
+
+### Story licenses
+Each story license sets terms for every bot group.
+
+![Story licenses](story-licenses.png)
+
+### Bot groups
+Newsrooms can edit the bots in each group or add groups.
+
+![Bot groups](bot-groups.png)
+
+### Payments log
+Every charge a bot paid, by story, with a running total. These are test charges.
+
+![Payments log](payments-log.png)
+
+### Cloudflare Worker log
+Requests handled by the edge Worker during a paid-fetch test.
+
+![Cloudflare Worker log](cloudflare-worker-log.png)
