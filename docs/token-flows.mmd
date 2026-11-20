@@ -1,0 +1,33 @@
+sequenceDiagram
+    autonumber
+    participant Op as Bot operator<br/>(a person at the AI company)
+    participant Bot as AI bot<br/>(e.g. Claude-User)
+    participant Stripe
+    participant Edge as Cloudflare Worker
+    participant WP as WordPress + RSL Newsroom<br/>(ledger, OLP server)
+
+    Note over Bot,WP: First visit: no license yet
+    Bot->>Edge: GET /story
+    Edge->>WP: POST /authorize (story, User-Agent, no token)
+    WP-->>Edge: 402 · group price · group RSL terms
+    Edge-->>Bot: 402 Payment Required<br/>WWW-Authenticate: License<br/>Link: rel="license" (server=…/olp)
+
+    Note over Op,WP: Open an account (once): buy prepaid credit
+    Op->>Stripe: Pay via the publisher's Payment Link
+    Stripe-->>WP: Redirect to /claim?session_id=…
+    WP->>Stripe: Verify the Checkout Session
+    WP-->>Op: client_id + client_secret, balance loaded<br/>(top-ups add to the same account)
+
+    alt Path A — RSL Open License Protocol (standard)
+        Bot->>WP: POST /olp/token<br/>Basic client_id:client_secret<br/>license=#lt;RSL terms#gt; · resource=#lt;story URL#gt;
+        WP->>WP: Check account, terms, balance<br/>charge per scrape or per version
+        WP-->>Bot: access_token (type "License") · expires_in
+    else Path B — Direct (shortcut for Stripe customers)
+        Note over Bot: Bot uses its client_secret<br/>as the License token directly
+    end
+
+    Bot->>Edge: GET /story<br/>Authorization: License #lt;token#gt;
+    Edge->>WP: POST /authorize (story, User-Agent, token)
+    WP->>WP: Valid? Covers this story version?<br/>Charge if not yet paid
+    WP-->>Edge: 200 permitted · charged · balance
+    Edge-->>Bot: 200 story<br/>Link: this group's license · X-RSL-Story-ID
