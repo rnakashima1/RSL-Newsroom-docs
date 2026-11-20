@@ -6,7 +6,7 @@ It is being built by Bay City News Labs, the experimental division of Bay City N
 
 > **About the source code.** This repository holds documentation only. The source code is in a private repository while its intellectual property is transferred to Bay City News Foundation; it is intended for release under the GPL-2.0 license. Grant reviewers can request read-only access.
 
-**Status:** version 0.8.0, early development. Running on a Local News Matters staging site behind the Cloudflare Worker in enforce mode. Not yet in production.
+**Status:** version 0.8.0, early development. Running on a Local News Matters staging site behind the Cloudflare Worker in enforce mode.
 
 ## See it working
 
