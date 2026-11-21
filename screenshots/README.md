@@ -33,11 +33,11 @@ Requests handled by the edge Worker during a paid-fetch test.
 ![Cloudflare Worker log](cloudflare-worker-log.png)
 
 ### News Monitor: overview
-News Monitor is a companion tool that asks AI websites about our stories and checks their answers. The overview shows how many answers linked to Local News Matters and how many repeated a story's facts without a source name or link.
+News Monitor is a companion tool that asks AI websites about stories and checks their answers. The overview shows how many answers linked to the originating news outlet and how many repeated a story's facts without a source name or link.
 
 ![News Monitor overview](news-monitor-overview.png)
 
 ### News Monitor: stories
-For each story: which AI websites were asked (ChatGPT, Gemini, Claude, Perplexity), how many of the story's facts each answer matched, and whether the answer credited Local News Matters.
+For each story: which AI websites were asked (ChatGPT, Gemini, Claude, Perplexity), how many of the story's facts each answer matched, and whether the answer credited the originating news outlet.
 
 ![News Monitor stories](news-monitor-stories.png)
