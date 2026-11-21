@@ -1,6 +1,6 @@
 # Screenshots
 
-All taken on the Local News Matters staging site on Nov. 20, 2026.
+The plugin and Cloudflare screenshots were taken on the Local News Matters staging site on Nov. 20, 2026. The News Monitor screenshots are from data updated Nov. 15, 2026.
 
 ### The reporter's view: one License dropdown per story
 The sidebar shows what each bot group gets, the rights holder and the story ID.
@@ -31,3 +31,13 @@ The edge Worker's log for a ClaudeBot test fetch: the bot presented a license to
 Requests handled by the edge Worker during a paid-fetch test.
 
 ![Cloudflare Worker log](cloudflare-worker-log.png)
+
+### News Monitor: overview
+News Monitor is a companion tool that asks AI websites about our stories and checks their answers. The overview shows how many answers linked to Local News Matters and how many repeated a story's facts without a source name or link.
+
+![News Monitor overview](news-monitor-overview.png)
+
+### News Monitor: stories
+For each story: which AI websites were asked (ChatGPT, Gemini, Claude, Perplexity), how many of the story's facts each answer matched, and whether the answer credited Local News Matters.
+
+![News Monitor stories](news-monitor-stories.png)
